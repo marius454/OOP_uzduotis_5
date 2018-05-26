@@ -14,3 +14,4 @@ struct values {
 	std::vector<size_t> line;
 };
 void RemovePunctuation();
+void isvedimas(std::map<std::string, values> wmap);
