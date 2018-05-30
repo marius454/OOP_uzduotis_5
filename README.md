@@ -6,18 +6,18 @@
 
 ```c++
 for (size_t i = 0; i < str.size(); ++i)
+	{
+		if (ispunct(str[i]) && str[i]!= '\'') 
 		{
-			if (ispunct(str[i]) && str[i]!= '\'') 
-			{
-				str.erase(i, 1);
-				--i;
-			}
-			else if (isupper(str[i])) 
-			{
-				str[i] = tolower(str[i]);
-				
-			}
+			str.erase(i, 1);
+			--i;
 		}
+		else if (isupper(str[i])) 
+		{
+			str[i] = tolower(str[i]);
+			
+		}
+	}
 ```
 
 ## Programos paskirtis
